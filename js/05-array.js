@@ -2,7 +2,8 @@ console.clear();
 /*
 Array - arejus, sarasas, listas, matrica, masyvas(slang)
 
-Masyvas prasideda index = 0;
+Masyvas(array) prasideda index = 0;
+array.length - masyve esanciu reiksmiu kiekis;
 */
 
 const empty = [];
@@ -58,3 +59,61 @@ function average(marks) {
 console.log('Vidurkis 1:', marks1, '=', average(marks1));
 console.log('Vidurkis 2:', marks2, '=', average(marks2));
 console.log('Vidurkis 3:', marks3, '=', average(marks3));
+
+
+const dict1 = ['pirmas', 'zodis', 'labas'];
+const dict2 = ['Labas', 'rytas', 'Lietuva'];
+const dict3 = ['Labas', 'rytas', 'suraitytas'];
+
+// a, b, c.
+
+function dictionary(wordList) {
+    console.log(wordList);
+    let result = 'Zodynas: ';
+    result += wordList[0] + ', ';
+    result += wordList[1] + ', ';
+    result += wordList[2] + '. ';
+    return result;
+    // Arba backtick return `Zodynas: ${wordList[0]}, ${wordList[1]}, ${wordList[2]}.`;
+}
+console.log(dictionary(dict1));
+console.log(dictionary(dict2));
+console.log(dictionary(dict3));
+/* Arba nepavyks panaudoti kai bus daug zodziu ir jei kiekvienas zodynas sudarys kintama kieki zodziu.
+Del to geriau naudoti logika kuri gauna vienu atveju viena zodyna kitokiu atveju kita.
+console.log(`Zodynas: ${wordList[0]}, ${wordList[1]}, ${wordList[2]}.`);
+console.log(`Zodynas: ${wordList[0]}, ${wordList[1]}, ${wordList[2]}.`);
+console.log(`Zodynas: ${wordList[0]}, ${wordList[1]}, ${wordList[2]}.`); */
+
+console.clear();
+
+// Istraukti kubine sakni tai tas pats kas pakelti viena treciaja.
+console.log(2 ** 3);
+console.log(9 ** 2);
+// Istraukti kubine sakni tai tas pats kas pakelti viena treciaja.
+console.log(9 ** 0.5);
+console.log(8 ** 0.33333333);
+
+// Zodzio arba sakinio skaidymas po viena pozicija(simboli). String yra supaprastintas masyvas(array).
+const text = 'Labas rytas';
+console.log(text);
+console.log(text[0]);
+console.log(text[1]);
+console.log(text[2]);
+console.log(text[3]);
+console.log(text[4]);
+console.log(text[5]);
+console.log(text[6]);
+console.log(text[7]);
+console.log(text[8]);
+console.log(text[9]);
+console.log(text[10]);
+// .length pasako kiek yra poziciju(simboliu) masyve(array);
+console.log(text.length);
+// Kartu skaiciuojasi ir tuscios eilutes. String ir Array ir giminingi bet ne panasus.
+console.log('                 '.length );
+
+
+/* Apskaiciuoti verte is sarasu kuriu verciu tipas yra skaiciai, pagal pateikta logika.
+a. 1-2+3-4+5.
+b. Rezultata isvesti i console. */
