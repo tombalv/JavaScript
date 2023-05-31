@@ -1,121 +1,257 @@
 console.clear();
+
 /*
-Numbers
+NUMBERS - skaiciai
 
- Normalus:
-  - sveikieji
-  -desimtainiai
+Sveikieji/desimtainiai
+Teigiami/neigiami
+Mistiniai: Begalybes ir NaN (not-a-number)
 
-Mistiniai:
- - Infinity/-Infinity
- - NaN (not-a-number)
+Aritmetiniai operatoriai:
++, -, *, /, **, ++, --
 
- Matematiniai veiksmai
- +, -, /, *, **(kelimas laipsniu) - Aritmetiniai operatoriai, % (liekana)
- priskyrimo operatoriai:
- =, +=,-=, /=, *=, **=, %=
+Priskirimo operatoriai:
+=, +=, -=, *=, /=, **=
 
- Kintamuju iniciavimo budai
- - const (default)
- - let (jei kinta reiksme)
- - var (nenaudoti, nebent zinai ka darai)
+Salia matematikos:
+(, )
+
+Kintamuju iniciavimo budai:
+const - default
+let - naudoti, tik jei reikia keisti reksmes
+var - senove, todel niekada nenaudoti, nebent TIKRAI zinai ka darai
 
 */
 
+console.log(1);
+console.log(2);
+console.log(3.14);
+console.log(2.72);
 
-// Sveikasis skaicius
-console.log(12551);
-console.log(-12551);
-console.log(0);
-console.log(-0);
+console.log(-1);
+console.log(-2);
+console.log(-3.14);
+console.log(-2.72);
 
-// Desimtainis skaicius
-console.log(3.1415);
-console.log(-3.1415);
-console.log(3 / 4);
-console.log(1 / 3);
-console.log(0.1 + 0.2);
-console.log(1 / 10 + 2 / 10);
-console.log(3 / 10);
-console.log(2 + 2 * 2);
-
-// Begalybes
 console.log(Infinity);
 console.log(-Infinity);
 
-//NaN
 console.log(NaN);
 
-// Aritmetiniai veiksmai
-console.log(7 + 5);
-console.log(7 - 5);
-console.log(7 / 5);
-console.log(7 * 5);
+console.log(2 + 2, 4);
+console.log(2 + 2 * 2, 6);
+console.log((2 + 2) * 2, 8);
 
-console.log(2 ** 2, '=', 2 * 2);
-console.log(2 ** 2, '=', 2 * 2 * 2);
-console.log(2 ** 4, '=',2 * 2 * 2 * 2);
+console.log(0.1 + 0.2, 0.3);
 
-const a = 7;
-console.log(a);
+console.clear();
 
-let PI = 3.14;
-console.log(PI);
+// KINTAMIEJI
 
-PI = 3;
-console.log(PI);
+const amzius = 20;
+console.log(amzius);
 
-// Pazymiai 10, 2, 8, 4, 6.
-let suma = 0;
-console.log(suma);
-suma = suma + 10;
-console.log(suma);
-suma = suma + 2;
-console.log(suma);
-suma = suma + 8;
-console.log(suma);
-suma = suma + 4;
-console.log(suma);
-suma = suma + 6;
-console.log(suma);
+const saldainiuKiekis = 19;
+const saldainiu_kiekis = 18;
+const SALDAINIU_KIEKIS = 17;
 
-let suma2 = 0;
-console.log(suma2);
-//Tapatys kintamieji suma2 = suma2
-suma2 = suma2 + 10;
-suma2 += 10;
-console.log(suma2);
-suma2 += 2;
-console.log(suma2);
-suma2 += 8;
-console.log(suma2);
-suma2 += 4;
-console.log(suma2);
-suma2 += 6;
-console.log(suma2);
+console.log(saldainiuKiekis);
+console.log(saldainiu_kiekis);
+console.log(SALDAINIU_KIEKIS);
 
-let suma3 = 0;
-console.log(suma3);
-suma3 += 10;
-console.log(suma3);
-suma3 *= 5;
-console.log(suma3);
-suma3 -= 1;
-console.log(suma3);
-suma3 /= 7;
-console.log(suma3);
-suma3 **= 3;
-console.log(suma3);
+console.log(amzius);
 
-const skaicius = 81;
-const daliklis = 10;
-const dalmuo = skaicius / daliklis;
-console.log(skaicius, '/', daliklis, '=', dalmuo);
-const liekana = skaicius % daliklis;
-console.log(liekana);
+console.clear();
+// Kintamieji: konstantos ir kintamieji;
 
-let liek = 144;
-liek %= 12;
-console.log(liek);
+let pinige = 0;
+console.log(pinige);
+console.log(pinige);
+console.log(pinige);
+console.log(pinige);
 
+pinige = 5;
+console.log(pinige);
+console.log(pinige);
+console.log(pinige);
+console.log(pinige);
 
+pinige = 20;
+console.log(pinige);
+console.log(pinige);
+console.log(pinige);
+
+pinige = 4 + 3;
+console.log(pinige);
+
+pinige = pinige + 3;
+console.log(pinige);
+
+pinige = pinige * 4;
+console.log(pinige);
+
+console.clear();
+
+let index = 0; // 0
+console.log(index);
+
+index = index + 1; // = 0 + 1
+console.log(index);
+
+index = index + 2; // = 1 + 2
+console.log(index);
+
+index = index + 3; // 3 + 3
+console.log(index);
+
+index = index + 4; // = 6 + 4
+console.log(index);
+
+index = index + 5; // = 10 + 5
+console.log(index);
+
+index = index + 6;
+console.log(index);
+
+index = index + 7;
+console.log(index);
+
+console.clear();
+
+let driezas = 1;
+console.log(driezas);
+
+driezas = 5 + driezas;
+console.log(driezas);
+
+driezas = driezas + 1;
+driezas = driezas + 2;
+driezas = driezas + 3;
+driezas = driezas + 4;
+driezas = driezas + 5;
+console.log(driezas);
+
+driezas += 6;
+console.log(driezas);
+
+driezas += 7;
+console.log(driezas);
+
+driezas += 8;
+console.log(driezas);
+
+console.clear();
+
+let rezultatas = 10;
+console.log(rezultatas);
+
+rezultatas += 20;
+console.log(rezultatas);
+
+rezultatas -= 4;
+console.log(rezultatas);
+
+rezultatas /= 13;
+console.log(rezultatas);
+
+rezultatas *= 5;
+console.log(rezultatas);
+
+rezultatas **= 6;
+console.log(rezultatas);
+
+console.clear();
+
+let x = 0;
+console.log(x);
+
+x = x + 1;
+console.log(x);
+
+x += 1;
+console.log(x);
+
+x++;
+console.log(x);
+
+x++;
+console.log(x);
+
+x++;
+console.log(x);
+
+x++;
+console.log(x);
+
+x++;
+console.log(x);
+
+console.clear();
+
+let y = 5;
+
+++y;
+console.log(y);
+
+++y;
+console.log(y);
+
+++y;
+console.log(y);
+
+console.clear();
+
+let m = 7;
+
+console.log(m); // turiu 7
+console.log(++m); // gaunu 8 -> log
+console.log(m++); // log 8 -> 9
+console.log(m++); // log 9 -> 10
+console.log(++m); // 11 -> log
+
+m++;
+console.log(m);
+
+++m;
+console.log(m);
+
+console.clear();
+
+let desimt = 10;
+console.log(desimt);
+console.log(--desimt);
+console.log(desimt);
+
+let n = 7;
+
+n++;
+n = n + 1;
+
+n--;
+n = n - 1;
+
+console.log(81 ** 0.5, 9);
+console.log(9 ** 0.5, 3);
+console.log(64 ** 0.5, 8);
+
+console.log(2 * 2 * 2 * 2, 2 ** 4);
+console.log(16 ** 0.25, 2);
+console.log(8 ** 0.3333333333333333333, 2);
+
+console.clear();
+
+const a = 8;
+const b = 9;
+const c = 10;
+
+const d = a + b + c;
+console.log(d);
+
+const p1 = 10;
+const p2 = 2;
+const p3 = 8;
+const p4 = 4;
+const p5 = 6;
+
+const vidurkis = (p1 + p2 + p3 + p4 + p5) / 5;
+console.log(vidurkis);
