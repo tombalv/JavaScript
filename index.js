@@ -2,7 +2,6 @@
 /* Multi line 
 comment */
 
-
 /* Baziniai konceptai
  - kintamieji
  - salygos (if)
