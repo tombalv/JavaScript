@@ -165,3 +165,88 @@ console.log("m1:1 ->", skaiciuotiKieki(masyvas1, ieskomasSkaicius));
 console.log("m2:1 ->", skaiciuotiKieki(masyvas2, ieskomasSkaicius));
 console.log("m4:1 ->", skaiciuotiKieki(masyvas3, ieskomasSkaicius));
 console.log("m4:1 ->", skaiciuotiKieki(masyvas4, ieskomasSkaicius));
+
+// Ciklo pirma uzduotis.
+
+// Intervalas: 0 ... 0
+let suma1 = 0;
+for (let i = 0; i <= 0; i++) {
+  suma1 += i;
+}
+console.log("Suma intervalui nuo 0 iki 0:", suma1);
+
+// Intervalas: 0 ... 4
+let suma2 = 0;
+for (let i = 0; i <= 4; i++) {
+  suma2 += i;
+}
+console.log("Suma intervalui nuo 0 iki 4:", suma2);
+
+// Intervalas: 0 ... 100
+let suma3 = 0;
+for (let i = 0; i <= 100; i++) {
+  suma3 += i;
+}
+console.log("Suma intervalui nuo 0 iki 100:", suma3);
+
+// Intervalas: 574 ... 815
+let suma4 = 0;
+for (let i = 574; i <= 815; i++) {
+  suma4 += i;
+}
+console.log("Suma intervalui nuo 574 iki 815:", suma4);
+
+// Intervalas: -50 ... 50
+let suma5 = 0;
+for (let i = -50; i <= 50; i++) {
+  suma5 += i;
+}
+console.log("Suma intervalui nuo -50 iki 50:", suma5);
+
+// Intervalas: -70 ... 30
+let suma6 = 0;
+for (let i = -70; i <= 30; i++) {
+  suma6 += i;
+}
+console.log("Suma intervalui nuo -70 iki 30:", suma6);
+
+function atbulai(tekstas) {
+  const masyvas = tekstas.split("");
+  const atbulaiMasyvas = masyvas.reverse();
+  const atbulaiTekstas = atbulaiMasyvas.join("");
+  return atbulaiTekstas;
+}
+
+const tekstas1 = "abcdef";
+const atbulaiTekstas = atbulai(tekstas1);
+console.log(atbulaiTekstas);
+
+// Ciklas trecias uzdavinys.
+console.clear;
+function beLiekanos(intervalasPradzia, intervalasPabaiga, daliklis) {
+  let kiekis = 0;
+  for (let skaicius = pradzia; skaicius <= pabaiga; skaicius++) {
+    if (skaicius % daliklis === 0) {
+      kiekis++;
+    }
+  }
+  return kiekis;
+}
+const pradzia = 0;
+const pabaiga = 11;
+const daliklis3 = 3;
+const daliklis5 = 5;
+const daliklis7 = 7;
+const kiekis3 = beLiekanos(pradzia, pabaiga, daliklis3);
+const kiekis5 = beLiekanos(pradzia, pabaiga, daliklis5);
+const kiekis7 = beLiekanos(pradzia, pabaiga, daliklis7);
+
+console.log(
+  `Skaičių intervale tarp ${pradzia} ir ${pabaiga}, besidalijančių be liekanos iš ${daliklis3} yra ${kiekis3} vienetai.`
+);
+console.log(
+  `Skaičių intervale tarp ${pradzia} ir ${pabaiga}, besidalijančių be liekanos iš ${daliklis5} yra ${kiekis5} vienetai.`
+);
+console.log(
+  `Skaičių intervale tarp ${pradzia} ir ${pabaiga}, besidalijančių be liekanos iš ${daliklis7} yra ${kiekis7} vienetai.`
+);
