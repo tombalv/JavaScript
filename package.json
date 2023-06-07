@@ -5,6 +5,7 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
+    "for": "nodemon ./js/09-for.js",
     "if": "nodemon ./js/08-if.js",
     "import": "nodemon ./js/07-import.js",
     "boolean": "nodemon ./js/06-boolean.js",
