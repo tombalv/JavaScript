@@ -46,3 +46,28 @@ console.log(multiply(-5, 0), "->", 0);
 console.log(multiply(5, 0), "->", 0);
 console.log(multiply(0.5, 0.5), "->", 0.25);
 console.log("------------");
+
+//Funkcijos ketvirta
+function didziausiasSkaicius(sarasas) {
+  if (
+    typeof sarasas === "object" &&
+    sarasas !== null &&
+    sarasas.length !== undefined
+  ) {
+    if (sarasas.length > 0) {
+      return Math.max(...sarasas);
+    } else {
+      return "Pateiktas sąrašas negali būti tuščias.";
+    }
+  }
+
+  return "Pateikta netinkamo tipo reikšmė.";
+}
+
+console.log(didziausiasSkaicius([1]));
+console.log(didziausiasSkaicius([1, 2, 3]));
+console.log(didziausiasSkaicius([-5, 78, 14, 0, 18]));
+console.log(didziausiasSkaicius([69, 69, 69, 69, 66]));
+console.log(didziausiasSkaicius([-1, -2, -3, -4, -5, -6, -7, -8]));
+console.log(didziausiasSkaicius("pomidoras"));
+console.log(didziausiasSkaicius([]));

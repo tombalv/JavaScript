@@ -5,6 +5,8 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
+    "biggestNumber": "nodemon ./mini/biggestNumber.js",
+    "numberLength": "nodemon ./mini/numberLength.js",
     "typeof": "nodemon ./js/10-typeof.js",
     "multiply": "nodemon ./mini/multiply.js",
     "for": "nodemon ./js/09-for.js",
